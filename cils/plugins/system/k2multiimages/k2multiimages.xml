@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - K2MultiImages</name>
+	<author>Andrey Miasoedov</author>
+	<creationDate>October 2012</creationDate>
+	<copyright></copyright>
+	<authorEmail>molotow11@gmail.com</authorEmail>
+	<authorUrl>http://joomcar.net</authorUrl>
+	<version>1.1</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description></description>
+
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_system_k2multiimages.ini</language>
+		<language tag="ru-RU">language/ru-RU.plg_system_k2multiimages.ini</language>
+		<language tag="fr-FR">language/fr-FR.plg_system_k2multiimages.ini</language>
+	</languages>
+	
+	<files>
+		<filename plugin="k2multiimages">k2multiimages.php</filename>
+		<filename>index.html</filename>
+		<folder>K2MultiImages</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_k2/elements/">
+			
+				<field name="" type="header" default="PLG_K2_MULTIIMAGES_TEMPLATE_HEADER" label="" description=""/>
+				
+				<field name="template" type="list" default="standart" label="PLG_K2_MULTIIMAGES_TEMPLATE" description="">
+					<option value="standart">Standard</option>
+					<option value="slider">Slider</option>
+					<option value="slider-hs">Slider HS</option>
+				</field>
+				
+				<field name="incategory" type="radio" default="0" label="PLG_K2_MULTIIMAGES_IN_CAT" description="">
+					<option value="0">PLG_K2_MULTIIMAGES_NO</option>
+					<option value="1">PLG_K2_MULTIIMAGES_YES</option>
+				</field>
+				
+				<field name="watermark" type="radio" default="0" label="PLG_K2_MULTIIMAGES_WATERMARK" description="">
+					<option value="0">PLG_K2_MULTIIMAGES_NO</option>
+					<option value="1">PLG_K2_MULTIIMAGES_YES</option>
+				</field>
+				
+				<field name="watermark_image" type="imagelist" directory="images" default="" label="PLG_K2_MULTIIMAGES_WATERMARK_IMAGE" description="PLG_K2_MULTIIMAGES_WATERMARK_IMAGE_DESC" />
+				
+				<field name="limit" type="text" default="" label="PLG_K2_MULTIIMAGES_LIMIT" description="" />
+			
+			</fieldset>
+		</fields>
+	</config>
+</extension>

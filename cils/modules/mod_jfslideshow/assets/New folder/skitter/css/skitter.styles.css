@@ -1,0 +1,103 @@
+/* =Skitter styles
+----------------------------------------------- */
+.box_skitter {position:relative;width:800px;height:300px;background:#ccc;}
+.box_skitter ul {display:none;}
+.box_skitter .container_skitter {overflow:hidden;position:relative;}
+.box_skitter .image {overflow:hidden;}
+.box_skitter .image img {display:none;}
+
+.box_skitter .box_clone {position:absolute;top:0;left:0;width:100px;overflow:hidden;display:none;z-index:20;}
+.box_skitter .box_clone img {position:absolute;top:0;left:0;z-index:20;}
+
+.jfprev_button {position:absolute;z-index:170;width:37px;height:37px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url(../../img/arrows/prev1.png) no-repeat left top}
+.jfnext_button {position:absolute;z-index:170;width:37px;height:37px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url(../../img/arrows/next1.png) no-repeat left top}
+
+.prevsldide1{background-image:url('../../img/arrows/prev1.png') !important;}
+.prevsldide2{background-image:url('../../img/arrows/prev2.png') !important;}
+.prevsldide3{background-image:url('../../img/arrows/prev3.png') !important;}
+.prevsldide4{background-image:url('../../img/arrows/prev4.png') !important;}
+.prevsldide5{background-image:url('../../img/arrows/prev5.png') !important;}
+.prevsldide6{background-image:url('../../img/arrows/prev6.png') !important;}
+
+.nextslide1{background-image:url('../../img/arrows/next1.png') !important;}
+.nextslide2{background-image:url('../../img/arrows/next2.png') !important;}
+.nextslide3{background-image:url('../../img/arrows/next3.png') !important;}
+.nextslide4{background-image:url('../../img/arrows/next4.png') !important;}
+.nextslide5{background-image:url('../../img/arrows/next5.png') !important;}
+.nextslide6{background-image:url('../../img/arrows/next6.png') !important;}
+
+.box_skitter .info_slide {position:absolute;bottom: -35px;left:15px;z-index:151;color:#fff;font-family: arial; padding:5px 0 5px 5px; height: 23px;font-size: 13px; font-family: arial;}
+.box_skitter .info_slide .image_number {float:left; line-height: 21px; text-align: center; margin:0 5px 0 0;cursor:pointer;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+.box_skitter .info_slide .image_number_select {float:left;margin:0 5px 0 0;}
+
+.box_skitter .container_thumbs {position:relative;overflow:hidden;height:50px;}
+.box_skitter .info_slide_thumb {-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;overflow:hidden;height:45px;top:auto;bottom:-5px;left:-5px;padding:5px;opacity:1.0;}
+.box_skitter .info_slide_thumb .image_number {overflow:hidden;position:relative;}
+
+
+.box_skitter .box_scroll_thumbs {padding:0 10px;}
+.box_skitter .box_scroll_thumbs .scroll_thumbs {position:absolute;bottom:60px;left:50px;background:#ccc;background:-moz-linear-gradient(-90deg, #555, #fff);background:-webkit-gradient(linear, left top, left bottom, from(#555), to(#fff));width:200px;height:10px;overflow:hidden;text-indent:-9999em;z-index:101;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;cursor:pointer;border:1px solid #333;}
+
+.box_skitter .info_slide_dots {position:absolute;z-index:151;padding:5px 0 5px 5px;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;}
+.box_skitter .info_slide_dots .image_number {float:left;margin:0 5px 0 0;cursor:pointer;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;width:10px;height:10px;text-indent:-9999em;overflow:hidden;}
+.box_skitter .info_slide_dots .image_number_select {float:left;margin:0 5px 0 0;}
+
+.label_skitter {z-index:150;position:absolute;display:none;}
+
+.box_skitter .loading {position:absolute; top:50%; right:50%; z-index:10000; margin:-16px -16px;color:#fff;text-indent:-9999em;overflow:hidden;background:url(../images/ajax-loader.gif) no-repeat left top;width:32px;height:32px;}
+
+.label_skitter p {padding:10px;margin:0;font:normal 22px arial,tahoma;letter-spacing:-1px;}
+.info_slide * {font-family:Consolas,arial,tahoma !important;}
+
+
+
+/* =Preview slide
+----------------------------------------------- */
+#preview_slide { display:none; position:absolute; z-index:152; bottom:30px; left:-40px; width:100px; height:100px; background:#fff; border:1px solid #222; -moz-box-shadow:rgba(0,0,0,0.7) 2px 2px 5px; -webkit-box-shadow:rgba(0,0,0,0.7) 2px 2px 5px; box-shadow:rgba(0,0,0,0.7) 2px 2px 5px; overflow:hidden; }
+#preview_slide ul { height:100px; overflow:hidden; margin:0; list-style:none; display:block; position:absolute; top:0; left:0; }
+#preview_slide ul li { width:100px; height:100px; overflow:hidden; float:left; margin:0; padding:0; position:relative; display:block; }
+#preview_slide ul li img { position:absolute; top:0; left:0; height:150px; width:auto; }
+
+/* =Focus
+----------------------------------------------- */
+#overlay_skitter { position:absolute; top:0; left:0; width:100%; z-index:9998; opacity:1; background:#000; }
+
+.box_skitter .focus_button {position:absolute;top:50%;z-index:100;width:42px;height:42px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url(../images/focus-button.png) no-repeat left top;opacity:0;}
+.box_skitter .play_pause_button {position:absolute;top:50%;z-index:151;width:42px;height:42px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url(../images/pause-button.png) no-repeat left top;opacity:0;}
+.box_skitter .play_pause_button.play_button {background:url(../images/play-button.png) no-repeat left top;}
+
+/* =Example for dimenions:
+----------------------------------------------- */
+.box_skitter_large {width:800px;height:300px;}
+.box_skitter_small {width:200px;height:100px;}
+
+.label_skitter {z-index:150;position:absolute;color:#fff;display:none;}
+.label_skitter_container{    
+    width: auto; height: auto;
+    position: relative;
+    z-index: 160;
+}
+.label_skitter_background{
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 150;
+    background: #000000;
+}
+.label_skitter h4{
+    color:#fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
+    font-size:20px;
+    line-height: 100%;
+}
+.label_skitter h4 a{
+    line-height: 100%;
+}
+.label_skitter p {
+    margin-top:	10px;
+    font-style:normal;
+    font-size:12px;
+    font-family:arial,tahoma; 
+    line-height:190%;}
+.box_skitter .progressbar { background:#000; position:absolute; left:0px;height:5px; width: 100%; z-index:199;}

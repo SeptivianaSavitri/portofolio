@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import: http://www.google.com/fonts#UsePlace:use/Collection:Open+sans+Web:400,200italic,300,300italic,200;
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*-------------------------------------------------*/
+/* =  content - price section
+/*-------------------------------------------------*/
+
+#price-section {
+    padding: 110px 0;
+}
+
+p.preText {
+	margin: 0 0 50px;
+	text-align: center;
+}
+
+ul.pricing-table {
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    transition: all 0.17s ease-in-out;
+    -moz-transition: all 0.17s ease-in-out;
+    -webkit-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out; 
+}
+
+ul.pricing-table.gold {
+	background-color: #2f2f2f;
+	color: #fff;
+}
+
+ul.pricing-table.platinum {
+	background-color: #961b81;
+	color: #fff;
+}
+
+#pricing-t {
+display:none;
+text-indent:-5000px;
+
+}
+
+ul.pricing-table:hover {
+    box-shadow: 0 0 15px #e2e2e2;
+}
+
+ul.pricing-table li {
+    list-style: none;
+    text-align: center;
+    padding: 3px 0;
+    border-top: none;
+}
+
+ul.pricing-table li.pclose {
+	text-decoration: line-through;
+}
+
+ul.pricing-table li.title {
+	padding: 27px 0;
+}
+
+ul.pricing-table li.price {
+	padding: 0 0 27px;
+}
+
+ul.pricing-table li .fa {
+	margin-right: 8px;
+}
+
+ul.pricing-table li .fa-close {
+	color: #d31515;
+}
+
+ul.pricing-table li p {
+    color: #2f2f2f;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+ul.pricing-table.gold li p, ul.pricing-table.platinum li p {
+	color: #fff;
+}
+
+ul.pricing-table li.title p {
+    color: #2f2f2f;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+ul.pricing-table.gold li.title p, ul.pricing-table.platinum li.title p {
+	color: #fff;
+}
+
+ul.pricing-table li.price p {
+    color: #252525;
+    text-transform: uppercase;
+}
+
+ul.pricing-table li.price p span {
+    display: block;
+    color: #961b81;
+    font-size: 60px;
+	font-weight: bold;
+    line-height: 60px;
+}
+
+ul.pricing-table.gold li.price p span, ul.pricing-table.platinum li.price p span {
+	color: #fff;
+}
+
+ul.pricing-table li.button-sign {
+    padding: 30px 0;
+}
+
+ul.pricing-table li a {
+    display: inline-block;
+    padding: 0 45px;
+	line-height: 36px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: #2f2f2f;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.17s ease-in-out;
+    -moz-transition: all 0.17s ease-in-out;
+    -webkit-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out;
+}
+
+ul.pricing-table.silver li a, ul.pricing-table.gold li a {
+	background: #961b81;
+}
+
+ul.pricing-table li a:hover {
+    background: #961b81;
+	transition: all 0.17s ease-in-out;
+    -moz-transition: all 0.17s ease-in-out;
+    -webkit-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out;
+}
+
+ul.pricing-table.silver li a:hover {
+	background: #2f2f2f;
+}
+
+ul.pricing-table.gold li a:hover, ul.pricing-table.platinum li a:hover {
+	background: #fff;
+	color: #2f2f2f;
+}

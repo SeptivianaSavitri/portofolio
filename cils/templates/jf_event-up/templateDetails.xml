@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>jf_event-up</name>
+	<version>1.0</version>
+	<creationDate>06/24/2015</creationDate>
+	<author>Kreatif GmbH</author>
+	<authorEmail>info@joomfreak.com</authorEmail>
+	<authorUrl>http://www.joomfreak.com</authorUrl>
+	<copyright>Kreatif GmbH</copyright>
+	<license>Attribution 2.5 Generic (CC BY 2.5)</license>
+	<description><![CDATA[<style type="text/css" media="all">
+<!--#container {padding:0 10px;}h2 {font-family: Arial Narrow,sans-serif;font-size:24px;margin:0; co-lor:#000;}--></style>
+<div id="container"><h2>jf_event-up</h2><hr color="#E6E6E6" size="0">
+<p><i>joomfreak August 2015! Joomla 1.0.0 Template | Creative Commons | by joomfreak.com!</i></p><hr color="#E6E6E6" size="0">
+<p>License: <strong><a href="http://creativecommons.org/licenses/by/2.5/" target="_blank">Creative Commons, Attribution 2.5 Generic (CC BY 2.5)</a></strong></p><hr color="#E6E6E6" size="0">
+<p>JF Event Up demo available here &raquo; <strong><a href="http://www.joomfreak.com/demo/" target="_blank">joomfreak Demo Server</a></strong></p><hr color="#E6E6E6" size="0">
+<p><a title="Visit our official website!" href="http://www.joomfreak.com" target="_blank">
+<img style="padding-left: 5px;" src="../templates/jf_event-up/images/core/jf_event-up.gif" border="0" alt="Logo" /></a></p>
+<img src="../templates/jf_event-up/images/core/module_positions.jpg" border="0" alt="Module Positions" />
+</div>]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>		
+		<folder>language</folder>
+		<folder>scripts</folder>
+	</files>
+	<positions>
+		<position>slideshow</position>
+		<position>debug</position>
+		<position>header-top</position>
+		<position>mainmenu</position>
+		<position>breadcrumb</position>
+		<position>content-top</position>
+		<position>content-bottom</position>
+		<position>main-about</position>
+		<position>main-artist</position>
+		<position>main-sponsors</position>
+		<position>main-blog</position>
+		<position>main-ticketprice</position>
+		<position>main-schedule</position>
+		<position>main-eventstats</position>
+		<position>main-numbers</position>
+		<position>main-l-infos</position>
+		<position>main-r-infos</position>
+		<position>main-gmap</position>
+		<position>main-contact</position>
+		<position>main-video</position>
+		<position>right</position>
+		<position>footer-top</position>
+		<position>footer</position>
+		<position>search</position>
+		<position>share</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_jf_event-up.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_jf_event-up.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="logoAs" type="list" default=""
+					label="Use logo as"
+					description="Select an option">
+						<option value="1">Use as image</option>
+  						<option value="2">Use as text</option>
+				</field>
+				
+				<field name="logoFile" class="" type="media" default=""
+					label="TPL_JF_EVENT-UP_LOGO_LABEL"
+					description="TPL_JF_EVENT-UP_LOGO_DESC" />
+					
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+					
+				<field name="templateColor" class="" type="color" default="#961b81"
+					label="TPL_JF_EVENT-UP_COLOR_LABEL"
+					description="TPL_JF_EVENT-UP_COLOR_DESC" />									
+
+				<field type="spacer" name="myspacer1" hr="true" />
+				
+				<field name="topContact"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Top Contact"
+					description="Show top contact">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field name="phone" type="text" default="+39 (0123) 978 645 3"
+					label="Phone"
+					description=""
+					filter="string" />
+				
+				<field name="email" type="text" default="info@yoursite.com"
+					label="Email"
+					description=""
+					filter="string" />
+					
+				<field type="spacer" name="myspacer2" hr="true" />
+				
+				<field name="social" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Social Button"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="twittericon" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Twitter Icon"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="twitterlink" type="text" default="#"
+					label="Twitter Link"
+					description="Please add your twitter link here"
+					filter="string" />
+				
+				<field name="flickricon" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Flickr Icon"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="flickrlink" type="text" default="#"
+					label="Flickr Link"
+					description="Please add your flickr link here"
+					filter="string" />
+				
+				<field name="vimeoicon" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Vimeo Icon"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="vimeolink" type="text" default="#"
+					label="Vimeo Link"
+					description="Please add your vimeo link here"
+					filter="string" />
+					
+				<field name="googleicon" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Google Plus Icon"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="googlelink" type="text" default="#"
+					label="Google Plus Link"
+					description="Please add your Google Plus link here"
+					filter="string" />	
+					
+				<field name="rssicon" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show RSS Icon"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="rsslink" type="text" default="#"
+					label="RSS Link"
+					description="Please add RSS link here"
+					filter="string" />
+					
+				<field name="pinteresticon" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Pinterest Icon"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="pinterestlink" type="text" default="#"
+					label="Pinterest Link"
+					description="Please add Pinterest link here"
+					filter="string" />	
+				
+				<field name="facebookicon" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Facebook Icon"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="facebooklink" type="text" default="#"
+					label="Facebook Link"
+					description="Please add your facebook link here"
+					filter="string" />					
+					
+				<field name="youtubeicon" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Show Youtube Icon"
+					description="Select an option">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+
+				<field name="youtubelink" type="text" default="#"
+					label="Youtube Link"
+					description="Please add your youtube link here"
+					filter="string" />
+				
+				<field type="spacer" name="myspacer3" hr="true" />
+				
+				<field name="copyright" type="textarea" default="" 
+					label="Copyright" 
+					description="" cols="40" rows="4" filter="raw"/>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

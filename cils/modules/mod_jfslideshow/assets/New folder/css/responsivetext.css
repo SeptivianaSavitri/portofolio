@@ -1,0 +1,63 @@
+/*
+Mobile portrait (320x480)
+Mobile landscape (480x320)
+Small tablet portrait (600x800)
+Small tablet landscape (800x600)
+*/
+.slideSloganText{
+	font-size: 3.125em !important;
+}
+.slidedescription{
+	font-size: 2em !important;
+	line-height:1em !important;
+}
+
+@media only screen and (max-width: 800px) {
+	.slideSloganText{
+		font-size:2.7em !important;
+	}
+	.slidedescription{
+		font-size: 1.6em !important;
+	}
+
+}
+@media only screen and (max-width: 600px) {
+	.slideSloganText{
+		font-size:2em !important;
+	}
+	.slidedescription{
+		font-size: 1.4em !important;
+	}
+
+}
+@media only screen and (max-width: 480px) {
+	.slideSloganText{
+		font-size:1.5em !important;
+	}
+	.slidedescription{
+		font-size: 1.2em !important;
+	}
+
+}
+@media only screen and (max-width: 320px) {
+	.slideSloganText{
+		font-size:1.2em !important;
+	}
+	.slidedescription{
+		font-size: 1em !important;
+	}
+
+}
+
+@media only screen and (max-width: 240px) {
+	.slideSloganText{
+		font-size:1em !important;
+	}
+	.slidedescription{
+		font-size: 0.7em !important;
+	}
+
+}
+
+
+

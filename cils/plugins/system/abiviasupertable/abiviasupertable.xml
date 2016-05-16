@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" version="1.6.0" method="upgrade">
+  <name>Abivia.net SuperTable Free Plugin</name>
+  <author>Abivia Inc.</author>
+  <creationDate>20140501</creationDate>
+  <copyright>(C) 2012-2014. Abivia Inc. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorUrl>http://www.abivia.net</authorUrl>
+  <version>2.0.3</version>
+  <description>PLG_ABIVIASUPERTABLE_PLUGIN_FREE_DESC</description>
+  <files>
+    <filename plugin="abiviasupertable">abiviasupertable.php</filename>
+    <folder>abiviasupertable</folder>
+    <folder>language</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="triggerWord" type="text" size="50" default="supertable" label="PLG_ABIVIASUPERTABLE_PARAM_TRIGGER_LBL" description="PLG_ABIVIASUPERTABLE_PARAM_TRIGGER_DESC"/>
+        <field name="cssMode" type="list" default="preset" label="PLG_ABIVIASUPERTABLE_PARAM_CSSMODE_LBL" description="PLG_ABIVIASUPERTABLE_PARAM_CSSMODE_DESC">
+          <option value="none">PLG_ABIVIASUPERTABLE_PARAM_CSSMODE_OPT_NONE</option>
+          <option value="preset">PLG_ABIVIASUPERTABLE_PARAM_CSSMODE_OPT_PRESET</option>
+          <option value="custom">PLG_ABIVIASUPERTABLE_PARAM_CSSMODE_OPT_CUSTOM</option>
+        </field>
+        <field name="presetFile" type="folderlist" size="1" default="ahs" directory="/plugins/system/abiviasupertable/abiviasupertable/css" label="PLG_ABIVIASUPERTABLE_PARAM_PRESETFILE_LBL" description="PLG_ABIVIASUPERTABLE_PARAM_PRESETFILE_DESC"/>
+        <field name="customFile" type="text" size="50" default="" directory="/" label="PLG_ABIVIASUPERTABLE_PARAM_CUSTOMFILE_LBL" description="PLG_ABIVIASUPERTABLE_PARAM_CUSTOMFILE_DESC"/>
+        <field name="jsLoad" type="radio" default="1" label="PLG_ABIVIASUPERTABLE_PARAM_JSLOAD_LBL" description="PLG_ABIVIASUPERTABLE_PARAM_JSLOAD_DESC">
+          <option value="1">PLG_ABIVIASUPERTABLE_OPT_YES</option>
+          <option value="0">PLG_ABIVIASUPERTABLE_OPT_NO</option>
+        </field>
+      </fieldset>
+      <fieldset name="diagnostics" label="PLG_ABIVIASUPERTABLE_FIELDSET_DIAGNOSTICS">
+        <field name="messages" type="list" default="1" description="PLG_ABIVIASUPERTABLE_PARAM_MESSAGES_DESC" label="PLG_ABIVIASUPERTABLE_PARAM_MESSAGES_LBL">
+          <option value="0">PLG_ABIVIASUPERTABLE_OPT_OFF</option>
+          <option value="1">PLG_ABIVIASUPERTABLE_PARAM_MESSAGES_OPT_HTML</option>
+          <option value="2">PLG_ABIVIASUPERTABLE_PARAM_MESSAGES_OPT_ARTICLE</option>
+        </field>
+        <field name="debug" type="list" default="0" label="PLG_ABIVIASUPERTABLE_PARAM_DEBUG_LBL">
+          <option value="0">PLG_ABIVIASUPERTABLE_OPT_OFF</option>
+          <option value="1">PLG_ABIVIASUPERTABLE_PARAM_DEBUG_OPT_BASIC</option>
+          <option value="2">PLG_ABIVIASUPERTABLE_PARAM_DEBUG_OPT_VERBOSE</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+  <updateservers><server type="extension" priority="100" name="SuperTable Free Updates">http://www.abivia.net/jupdate/supertable-free_j30.xml</server>
+  </updateservers>
+</extension>

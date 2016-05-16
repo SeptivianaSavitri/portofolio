@@ -1,0 +1,28 @@
+html, body, h1, h2, h3, blockquote, p, ol, ul, li, img, iframe, buttona, a {
+	color: #fff;
+	font-family: "Montserrat",sans-serif !important;
+}
+
+.tweet {
+	border-width: 0 !important;
+}
+
+.customisable, .customisable:link, .customisable:visited, .customisable:hover, .customisable:focus, .customisable:active, .customisable-highlight:hover, .customisable-highlight:focus, a:hover .customisable-highlight, a:focus .customisable-highlight {
+	color: #961b81 !important;
+}
+
+.p-author .profile .p-name {
+	display: none !important;
+}
+
+.p-author .profile .p-nickname {
+	color: #fff !important;
+}
+
+.header .avatar {
+	display: none !important;
+}
+
+.var-chromeless .tweet {
+    padding: 12px 0px 10px !important;
+}

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+	<name>JF slideshow</name>
+	<author>Kreatif Multimedia GmbH</author>
+    <version>1.0.0</version>
+	<creationDate>29/01/2013</creationDate>
+	<copyright>Kreatif Multimedia GmbH</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@joomfreak.com</authorEmail>
+	<authorUrl>http://www.joomfreak.com</authorUrl>
+	<edition>Free</edition>
+	<description>JFSS_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_jfslideshow">mod_jfslideshow.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+		<folder>tmpl</folder>		
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_jfslideshow.ini</language>
+		<language tag="en-GB">en-GB.mod_jfslideshow.sys.ini</language>		
+	</languages>
+
+	<config>
+		<fields name="params">
+
+    		<fieldset name="basic" label="JF Slideshow Settings" addfieldpath="/modules/mod_jfslideshow/fields/">
+
+			<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />		
+
+			<field name="moduletype" type="list" default="1" label="Select module type" description="To set a image as page background select SLIDESHOW. To set a Youtube video as page background, select YOUTUBE">
+				<option value="0">Slideshow</option>
+				<option value="1">Youtube Video</option>		  
+			</field>		
+		
+			<field name="youtubeoption" type="youtubeoption" label="Youtube video options" description="" ></field>
+			<field name="slideoption" type="slideoption" label="Slideshow options" description="" ></field>
+			
+			<field name="youtubeoption_id" class="deleteme" type="hidden" />
+			<field name="youtubeoption_start" class="deleteme" type="hidden" />
+			<field name="youtubeoption_mute" class="deleteme" type="hidden" />
+			<field name="youtubeoption_repeat" class="deleteme" type="hidden" />
+			
+			
+			<field name="slideoption_slidetype" class="deleteme" type="hidden" />			
+			<field name="slideoption_navigation" class="deleteme" type="hidden" />
+			<field name="slideoption_arrow" class="deleteme" type="hidden" />
+			<field name="slideoption_textresponsive" class="deleteme" type="hidden" />
+			<field name="slideoption_slide_interval" class="deleteme" type="hidden" />
+			<field name="slideoption_transition" class="deleteme" type="hidden" />
+			<field name="slideoption_transition_speed" class="deleteme" type="hidden" />
+			<field name="slideoption_performance" class="deleteme" type="hidden" />
+			<field name="slideoption_slidecaption" class="deleteme" type="hidden" />
+			<field name="slideoption_transition2" class="deleteme" type="hidden" />
+			<field name="slideoption_maxheight" class="deleteme" type="hidden" />
+			
+			<field name="slideoption_image1" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan1" class="deleteme" type="hidden" />
+			<field name="slideoption_font1" class="deleteme" type="hidden" />
+			<field name="slideoption_color1" class="deleteme" type="hidden" />
+			<field name="slideoption_size1" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow1" class="deleteme" type="hidden" />
+			<field name="slideoption_link1" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl1" class="deleteme" type="hidden" />			
+			<field name="slideoption_des1" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont1" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize1" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor1" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor1" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth1" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius1" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow1" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg1" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor1" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover1" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal1" class="deleteme" type="hidden" />
+			
+			
+			<field name="slideoption_image2" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan2" class="deleteme" type="hidden" />
+			<field name="slideoption_font2" class="deleteme" type="hidden" />
+			<field name="slideoption_color2" class="deleteme" type="hidden" />
+			<field name="slideoption_size2" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow2" class="deleteme" type="hidden" />
+			<field name="slideoption_link2" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl2" class="deleteme" type="hidden" />
+			<field name="slideoption_des2" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont2" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize2" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor2" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor2" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth2" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius2" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow2" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg2" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor2" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover2" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal2" class="deleteme" type="hidden" />
+			
+			
+			<field name="slideoption_image3" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan3" class="deleteme" type="hidden" />
+			<field name="slideoption_font3" class="deleteme" type="hidden" />
+			<field name="slideoption_color3" class="deleteme" type="hidden" />
+			<field name="slideoption_size3" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow3" class="deleteme" type="hidden" />
+			<field name="slideoption_link3" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl3" class="deleteme" type="hidden" />
+			<field name="slideoption_des3"  filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont3" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize3" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor3" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor3" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth3" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius3" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow3" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg3" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor3" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover3" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal3" class="deleteme" type="hidden" />
+			
+			
+			<field name="slideoption_image4" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan4" class="deleteme" type="hidden" />
+			<field name="slideoption_font4" class="deleteme" type="hidden" />
+			<field name="slideoption_color4" class="deleteme" type="hidden" />
+			<field name="slideoption_size4" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow4" class="deleteme" type="hidden" />
+			<field name="slideoption_link4" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl4" class="deleteme" type="hidden" />
+			<field name="slideoption_des4" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont4" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize4" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor4" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor4" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth4" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius4" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow4" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg4" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor4" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover4" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal4" class="deleteme" type="hidden" />
+			
+			
+			<field name="slideoption_image5" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan5" class="deleteme" type="hidden" />
+			<field name="slideoption_font5" class="deleteme" type="hidden" />
+			<field name="slideoption_color5" class="deleteme" type="hidden" />
+			<field name="slideoption_size5" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow5" class="deleteme" type="hidden" />
+			<field name="slideoption_link5" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl5" class="deleteme" type="hidden" />
+			<field name="slideoption_des5" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont5" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize5" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor5" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor5" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth5" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius5" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow5" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg5" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor5" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover5" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal5" class="deleteme" type="hidden" />
+			
+			
+			<field name="slideoption_image6" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan6" class="deleteme" type="hidden" />
+			<field name="slideoption_font6" class="deleteme" type="hidden" />
+			<field name="slideoption_color6" class="deleteme" type="hidden" />
+			<field name="slideoption_size6" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow6" class="deleteme" type="hidden" />
+			<field name="slideoption_link6" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl6" class="deleteme" type="hidden" />
+			<field name="slideoption_des6" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont6" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize6" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor6" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor6" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth6" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius6" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow6" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg6" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor6" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover6" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal6" class="deleteme" type="hidden" />
+			
+			
+			<field name="slideoption_image7" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan7" class="deleteme" type="hidden" />
+			<field name="slideoption_font7" class="deleteme" type="hidden" />
+			<field name="slideoption_color7" class="deleteme" type="hidden" />
+			<field name="slideoption_size7" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow7" class="deleteme" type="hidden" />
+			<field name="slideoption_link7" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl7" class="deleteme" type="hidden" />
+			<field name="slideoption_des7" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont7" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize7" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor7" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor7" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth7" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius7" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow7" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg7" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor7" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover7" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal7" class="deleteme" type="hidden" />
+			
+			<field name="slideoption_image8" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan8" class="deleteme" type="hidden" />
+			<field name="slideoption_font8" class="deleteme" type="hidden" />
+			<field name="slideoption_color8" class="deleteme" type="hidden" />
+			<field name="slideoption_size8" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow8" class="deleteme" type="hidden" />
+			<field name="slideoption_link8" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl8" class="deleteme" type="hidden" />
+			<field name="slideoption_des8" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont8" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize8" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor8" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor8" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth8" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius8" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow8" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg8" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor8" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover8" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal8" class="deleteme" type="hidden" />
+			
+			<field name="slideoption_image9" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan9" class="deleteme" type="hidden" />
+			<field name="slideoption_font9" class="deleteme" type="hidden" />
+			<field name="slideoption_color9" class="deleteme" type="hidden" />
+			<field name="slideoption_size9" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow9" class="deleteme" type="hidden" />
+			<field name="slideoption_link9" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl9" class="deleteme" type="hidden" />
+			<field name="slideoption_des9" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont9" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize9" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor9" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor9" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth9" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius9" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow9" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg9" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor9" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover9" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal9" class="deleteme" type="hidden" />
+			
+			<field name="slideoption_image10" class="deleteme" type="hidden" />
+			<field name="slideoption_slogan10" class="deleteme" type="hidden" />
+			<field name="slideoption_font10" class="deleteme" type="hidden" />
+			<field name="slideoption_color10" class="deleteme" type="hidden" />
+			<field name="slideoption_size10" class="deleteme" type="hidden" />
+			<field name="slideoption_sloganshadow10" class="deleteme" type="hidden" />
+			<field name="slideoption_link10" class="deleteme" type="hidden" />
+			<field name="slideoption_linkurl10" class="deleteme" type="hidden" />
+			<field name="slideoption_des10" filter="safehtml" class="deleteme" type="hidden" />
+			<field name="slideoption_desfont10" class="deleteme" type="hidden" />
+			<field name="slideoption_descsize10" class="deleteme" type="hidden" />
+			<field name="slideoption_descolor10" class="deleteme" type="hidden" />
+			<field name="slideoption_desbgcolor10" class="deleteme" type="hidden" />
+			<field name="slideoption_deswidth10" class="deleteme" type="hidden" />
+			<field name="slideoption_desradius10" class="deleteme" type="hidden" />
+			<field name="slideoption_desshadow10" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbg10" class="deleteme" type="hidden" />
+			<field name="slideoption_linkbgcolor10" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolorhover10" class="deleteme" type="hidden" />
+			<field name="slideoption_linkcolornormal10" class="deleteme" type="hidden" />
+			</fieldset>
+			
+			<fieldset name="advanced" addfieldpath="/administrator/components/com_k2/elements/">
+				<field name="showCountdown"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="Show countdown to event"
+					description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="category_id" type="categories" default="" label="Select event category" description=""/>
+                <field name="extra_field_showing" type="Jfextra" default="" label="Select event time extra field" description=""/>
+            </fieldset>
+    	</fields>	
+    </config>
+</extension>

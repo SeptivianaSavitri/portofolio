@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>JF Facebook Event Statistics</name>
+    <version>1.0.0</version>
+	<creationDate>14 /07 /2015</creationDate>
+	<author>Kreatif GmbH</author>
+	<authorEmail>info@joomfreak.com</authorEmail>
+	<authorUrl>http://www.joomfreak.com</authorUrl>
+	<copyright>Kreatif GmbH</copyright>
+	<license>Attribution 2.5 Generic (CC BY 2.5)</license>
+    <description>JF Facebook Event Statistics</description>
+	<files>
+		<filename module="mod_jf_eventstats">mod_jf_eventstats.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jf_eventstats.xml</filename>
+		<folder>facebook-php-sdk-v4-4.0-dev</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="modulePretext" type="textarea" default="" label="Description text at the top " description="" cols="40" rows="4" filter="raw" />
+				<field name="eventID" type="text" default="" label="Facebook Event ID" description="Enter your Facebook Event ID" /> 
+				<field name="appID" type="text" default="" label="Facebook App ID" description="Enter your Facebook Application ID" /> 
+				<field name="appSecret" type="text" default="" label="Facebook Secret" description="Enter your Facebook App Secret Key" /> 
+			</fieldset>
+		</fields>
+	</config>
+</extension>

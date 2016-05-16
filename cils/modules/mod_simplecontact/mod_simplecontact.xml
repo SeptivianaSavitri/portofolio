@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>Simple Contact</name>
+	<author>Vsmart Extensions</author>
+	<creationDate>December 2011</creationDate>
+	<authorEmail>info@vsmart-extensions.com</authorEmail>
+	<authorUrl>www.vsmart-extensions.com</authorUrl>
+	<version>1.0.0</version>
+	<licence>GPL</licence>
+	<description>Show simple contact module</description>
+	<files>
+		<filename module="mod_simplecontact">mod_simplecontact.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_simplecontact.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="preContactText" type="textarea" default="Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi." label="Description text at the top" description="" cols="40" rows="4" filter="raw"/>
+				<field name="@spacer" type="spacer" default="" label="" description="" />				
+				<field name="email" type="text" default="info@yourdomain.com" label="Email" description="" size="50" />
+				<field name="subject" type="text" default="subject" label="Subject" description="" size="50" />	
+				<field name="success" type="text" default="Thanks for your contact!" label="Success Message" description="" size="50" />
+				<field name="error" type="text" default="Send email error,please try again." label="Error Message" description="" size="50" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="name_text" type="text" default="Enter Name" label="Name Text" description="" size="30" />
+				<field name="email_text" type="text" default="Enter E-mail" label="Email Text" description="" size="30" />
+				<field name="url_text" type="text" default="Enter URL" label="Url Text" description="" size="30" />
+				<field name="message_text" type="text" default="Enter Message" label="Message Text" description="" size="30" />
+				<field name="checkbox_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." label="Checkbox Text" description="" cols="40" rows="4" filter="raw"/>
+				<field name="submit_text" type="text" default="Submit" label="Button Text" description="" size="30" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

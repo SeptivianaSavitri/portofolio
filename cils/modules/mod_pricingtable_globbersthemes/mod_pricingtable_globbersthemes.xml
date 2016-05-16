@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Pricing Table  | Globbersthemes </name>
+    <author>Globbers</author>
+    <email>globbers@hotmail.fr</email>
+    <version>1.0.0</version>
+    <description>
+	
+	 <![CDATA[<h1> Module Pricing Table for joomla 2.5x and joomla 3x</h1>
+	    <span style="font-size: 15px;font-weight:bold;">
+			Module Pricing Table Joomla Extension ,design by globbers.
+			<span style="color:red; font-weight: bold; ">!Not for commercial!!! for commercial use, you must pay a special license (5 EURO) .</span> <br />			
+			<br />Visit globbersthemes: <a href="http://www.globbersthemes.com" target="_blank">http://www.globbersthemes.com</a>.<br />
+			</span>
+			
+
+			<hr />
+
+			<h3><b>OTHER FREE EXTENSIONS </b></h3>
+			<table>
+			<td width="200px">
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/timeline" target="_blank"><b>Timeline Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/revo-slider" target="_blank"><b>Revol Slider Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/pricing-table" target="_blank"><b>Pricing Table Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/accordeon" target="_blank"><b>Accordeon Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/mixitup-slider" target="_blank"><b>Mixitup Portfolio Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/carrousel-slider" target="_blank"><b>Carrousel Slider Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/" target="_blank"><b>Media Folio Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/parallax-slide" target="_blank"><b>Parallax Slider Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/magic-portfolio" target="_blank"><b>Magic Portfolio Joomla Extension</b></a>.</span><br />
+			</td>
+
+			<td width="200px">
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/grid-rotator" target="_blank"><b>Grid Rotator Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/masonry-portfolio" target="_blank"><b>Masonry Portfolio Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/team-manager" target="_blank"><b>Team Manager Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/google-map" target="_blank"><b>Google Map Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/slideshow-image-duo" target="_blank"><b>Slideshow Image Duo Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/gallery-grid" target="_blank"><b>Gallery Grid Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/carrousel-text" target="_blank"><b>Carrousel Text Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/flickr-photostream" target="_blank"><b>Flickr Photostream Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/grid-rotator" target="_blank"><b>Grid Rotator Joomla Extension</b></a>.</span><br />
+			
+			</td>
+
+		
+			</table>
+			<br /><br />]]>
+	
+	
+	</description>
+    <files>
+       <filename>mod_pricingtable_globbersthemes.xml</filename>
+        <filename module="mod_pricingtable_globbersthemes">mod_pricingtable_globbersthemes.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <folder>assets</folder>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="Options">
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+					
+				<field name="preText" type="textarea" default="" label="Description text at the top" description="" cols="40" rows="4" filter="raw"/>
+					
+				<field type="spacer" name="spacer1" hr="true" />
+				
+				<field name="titleitem1" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Title Table Pricing 1" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="titlepricingitem1" type="text" default="Basic Pack" label="Title table Pricing 1" description="" size="10" />
+				
+				<field name="option1item1" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 1 Table Pricing 1" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option1pricingitem1" type="text" default="10GB Disk Space" label="Text 1 table Pricing 1" description="" size="10" />
+				
+				<field name="option2item1" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 2 Table Pricing 1" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option2pricingitem1" type="text" default="100GB Monthly Bandwidth" label="Text 2 Table Pricing 1" description="" size="10" />
+				
+				<field name="option3item1" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 3 Table Pricing 1" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option3pricingitem1" type="text" default="20 Email Accounts" label="Text 3 Table Pricing 1" description="" size="10" />
+				
+				<field name="option4item1" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 4 Table Pricing 1" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option4pricingitem1" type="text" default="1 Domain" label="Text 4 Table Pricing 1" description="" size="10" />
+				
+				<field name="option5item1" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 5 Table Pricing 1" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option5pricingitem1" type="text" default="$25.50" label="Text 5 Table Pricing 1" description="" size="10" />
+				<field name="option6pricingitem1" type="text" default="month" label="Text 6 Table Pricing 2" description="" size="10" />
+				
+				<field name="buttonitem1" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate button Table Pricing 1" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="buttonpricingitem1" type="text" default="Sign up" label="Text button table pricing 1" description="" />
+				<field name="buttonurlitem1" type="text" default="http://www.globbersthemes.com" label="Link button table pricing 2" description="" />
+				
+				<field type="spacer" name="spacer2" hr="true" />	
+				
+				<field name="titleitem2" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Title Table Pricing 2" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="titlepricingitem2" type="text" default="Premium Pack" label="Title table Pricing 2" description="" size="10" />
+				
+				<field name="option1item2" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 1 Table Pricing 2" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option1pricingitem2" type="text" default="10GB Disk Space" label="Text 1 table Pricing 2" description="" size="10" />
+				
+				<field name="option2item2" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 2 Table Pricing 2" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option2pricingitem2" type="text" default="100GB Monthly Bandwidth" label="Text 2 Table Pricing 2" description="" size="10" />
+				
+				<field name="option3item2" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 3 Table Pricing 2" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option3pricingitem2" type="text" default="20 Email Accounts" label="Text 3 Table Pricing 2" description="" size="10" />
+				
+				<field name="option4item2" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 4 Table Pricing 2" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option4pricingitem2" type="text" default="1 Domain" label="Text 4 Table Pricing 2" description="" size="10" />
+				
+				<field name="option5item2" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 5 Table Pricing 2" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option5pricingitem2" type="text" default="$50.50" label="Text 5 Table Pricing 2" description="" size="10" />
+				<field name="option6pricingitem2" type="text" default="month" label="Text 6 Table Pricing 2" description="" size="10" />
+				
+				<field name="buttonitem2" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate button Table Pricing 2" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="buttonpricingitem2" type="text" default="sign up" label="Text button table pricing 2" description="" />
+				<field name="buttonurlitem2" type="text" default="http://www.globbersthemes.com" label="Link button table pricing 2" description="" />
+				
+				<field type="spacer" name="spacer3" hr="true" />
+				
+				<field name="titleitem3" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Title Table Pricing 3" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="titlepricingitem3" type="text" default="Premium Pack" label="Title table Pricing 3" description="" size="10" />
+				
+				<field name="option1item3" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 1 Table Pricing 3" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option1pricingitem3" type="text" default="10GB Disk Space" label="Text 1 table Pricing 3" description="" size="10" />
+				
+				<field name="option2item3" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 2 Table Pricing 3" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option2pricingitem3" type="text" default="100GB Monthly Bandwidth" label="Text 2 Table Pricing 3" description="" size="10" />
+				
+				<field name="option3item3" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 3 Table Pricing 3" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option3pricingitem3" type="text" default="20 Email Accounts" label="Text 3 Table Pricing 3" description="" size="10" />
+				
+				<field name="option4item3" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 4 Table Pricing 3" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option4pricingitem3" type="text" default="1 Domain" label="Text 4 Table Pricing 3" description="" size="10" />
+				
+				<field name="option5item3" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 5 Table Pricing 3" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option5pricingitem3" type="text" default="$75.50" label="Text 5 Table Pricing 3" description="" size="10" />
+				<field name="option6pricingitem3" type="text" default="month" label="Text 6 Table Pricing 2" description="" size="10" />
+				
+				<field name="buttonitem3" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate button Table Pricing 3" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="buttonpricingitem3" type="text" default="sign up" label="Text button table pricing 3" description="" />
+				<field name="buttonurlitem3" type="text" default="http://www.globbersthemes.com" label="Link button table pricing 2" description="" />
+				
+				<field type="spacer" name="spacer4" hr="true" />
+				
+				<field name="titleitem4" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Title Table Pricing 4" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="titlepricingitem4" type="text" default="Basic Pack" label="Title table Pricing 4" description="" size="10" />
+				
+				<field name="option1item4" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 1 Table Pricing 4" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option1pricingitem4" type="text" default="10GB Disk Space" label="Text 1 table Pricing 4" description="" size="10" />
+				
+				<field name="option2item4" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 2 Table Pricing 4" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option2pricingitem4" type="text" default="100GB Monthly Bandwidth" label="Text 2 Table Pricing 4" description="" size="10" />
+				
+				<field name="option3item4" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 3 Table Pricing 4" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option3pricingitem4" type="text" default="20 Email Accounts" label="Text 3 Table Pricing 4" description="" size="10" />
+				
+				<field name="option4item4" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 4 Table Pricing 4" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option4pricingitem4" type="text" default="1 Domain" label="Text 4 Table Pricing 4" description="" size="10" />
+				
+				<field name="option5item4" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate Text 5 Table Pricing 4" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="option5pricingitem4" type="text" default="$25.50" label="Text 5 Table Pricing 4" description="" size="10" />
+				<field name="option6pricingitem4" type="text" default="month" label="Text 6 Table Pricing 4" description="" size="10" />
+				
+				<field name="buttonitem4" type="radio" class="btn-group btn-group-yesno" default="1" label="Activate button Table Pricing 4" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="buttonpricingitem4" type="text" default="Sign up" label="Text button table pricing 4" description="" />
+				<field name="buttonurlitem4" type="text" default="http://www.globbersthemes.com" label="Link button table pricing 4" description="" />
+				
+				<field type="spacer" name="spacer5" hr="true" />
+				<field name="colorbutton" type="color" default="#414141" label="color button table Pricing " description="" size="10" />
+	
+			</fieldset>	
+		</fields>
+    </config>
+</extension>

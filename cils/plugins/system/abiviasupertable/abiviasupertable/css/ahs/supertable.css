@@ -1,0 +1,323 @@
+/**
+ * Abivia Super Table Plugin.
+ *
+ * @package AbiviaSuperTable
+ * @copyright (C) 2011-2012 by Abivia Inc. All rights reserved.
+ * @license GNU/GPL
+ * @link http://www.abivia.net/
+ */
+.supertable {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+.supertable a:link, .supertable a:visited {
+    color: #a13032;
+    font-weight: inherit;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.4s ease-out;
+}
+.supertable a:hover, .supertable a:focus {
+    color: #333333;
+    font-weight: inherit;
+}
+.supertable a.supertable-block:link, .supertable a.supertable-block:visited {
+    text-decoration: none;
+}
+.supertable a.supertable-block:hover, .supertable a.supertable-block:focus {
+    text-decoration: none;
+}
+.supertable-colmode .supertable-row-head a:link,
+.supertable-colmode .supertable-row-head a:visited,
+.supertable-rowmode .supertable-row-head .supertable-cell a:link,
+.supertable-rowmode .supertable-row-head .supertable-cell a:visited {
+    color: #67c762;
+}
+.supertable-colmode .supertable-row-head a:hover,
+.supertable-rowmode .supertable-row-head .supertable-cell a:hover {
+    color: #84c781;
+}
+.supertable-colmode .supertable-col-rowhead a:link,
+.supertable-colmode .supertable-col-rowhead a:visited,
+.supertable-rowmode .supertable-col-rowhead a:link,
+.supertable-rowmode .supertable-col-rowhead a:visited {
+    color: #530c35;
+}
+.supertable-colmode .supertable-col-rowhead a:hover,
+.supertable-rowmode .supertable-col-rowhead a:hover {
+    color: #602e4b;
+}
+.supertable .supertable-cell-text {
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.supertable-active .supertable-row-head {
+    background: none repeat scroll 0 0 #81275c;
+    border-bottom: 1px solid #81275c;
+    border-left: 1px solid #81275c;
+    border-top: 1px solid #81275c;
+}
+.supertable-border {
+    border: 0 solid;
+    margin: -1px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+.supertable-cell {
+    color: #333333;
+    padding-bottom:10px;
+    padding-top:10px;
+    text-align:center;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.8);
+}
+.supertable-clear {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0;
+    height: 0;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+}
+.supertable-colmode .supertable-col, .supertable-colmode .supertable-col-rowhead {
+    float:left;
+}
+.supertable-col.supertable-active {
+    z-index:2;
+    position:relative;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+    -moz-box-shadow:0 0 25px rgba(0,0,0,0.6);
+    -moz-transition: -moz-box-shadow 0.4s ease-out 0s;
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.6);
+    -webkit-transition: -webkit-box-shadow 0.4s ease-out;
+}
+.supertable-colmode .supertable-col-even .supertable-row-even,
+.supertable-rowmode .supertable-row-even .supertable-col-even { /* 132 */
+    background: #c4c4c4;
+    border-bottom:1px solid #bdbdbd;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #bdbdbd;
+    border-top:1px solid #cccccc;
+}
+.supertable-colmode .supertable-col-even.supertable-active .supertable-row-even,
+.supertable-rowmode .supertable-row-even.supertable-active .supertable-col-even {
+    background: #cccccc;
+    border-bottom:1px solid #c4c4c4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #c4c4c4;
+    border-top:1px solid #d4d4d4;
+}
+.supertable-colmode .supertable-col-even .supertable-row-odd,
+.supertable-rowmode .supertable-row-even .supertable-col-odd {
+    background: #dbdbdb;
+    border-bottom:1px solid #d4d4d4;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #d4d4d4;
+    border-top:1px solid #e3e3e3;
+}
+.supertable-colmode .supertable-col-even.supertable-active .supertable-row-odd {
+    background: #e3e3e3;
+    border-bottom:1px solid #d4d4d4;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #d4d4d4;
+    border-top:1px solid #dbdbdb;
+}
+.supertable-colmode .supertable-col-odd .supertable-row-even,
+.supertable-rowmode .supertable-row-odd .supertable-col-even {
+    background: #dbdbdb;
+    border-bottom:1px solid #d4d4d4;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #d4d4d4;
+    border-top:1px solid #e3e3e3;
+}
+.supertable-colmode .supertable-col-odd.supertable-active .supertable-row-eve,
+.supertable-rowmode .supertable-row-odd.supertable-active .supertable-col-even {
+    background: #e3e3e3;
+    border-bottom:1px solid #d4d4d4;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #d4d4d4;
+    border-top:1px solid #dbdbdb;
+}
+.supertable-colmode .supertable-col-odd .supertable-row-odd,
+.supertable-rowmode .supertable-row-odd .supertable-col-odd {
+    background: #ebebeb;
+    border-bottom:1px solid #e3e3e3;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #e3e3e3;
+    border-top:1px solid #f2f2f2;
+}
+.supertable-colmode .supertable-col-odd.supertable-active .supertable-row-odd,
+.supertable-rowmode .supertable-row-odd.supertable-active .supertable-col-odd {
+    background: #f2f2f2;
+    border-bottom:1px solid #ebebeb;
+    border-left: 1px solid #fafafa;
+    border-right: 1px solid #ebebeb;
+    border-top:1px solid #fafafa;
+}
+.supertable-colmode .supertable-col-first { /* 202 */
+    border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+}
+.supertable-colmode .supertable-col-first .supertable-row-first {
+    border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+}
+.supertable-col-first .supertable-row-head.supertable-row-first {
+    border-left: 1px solid #a13032;
+    border-top: 1px solid #a13032;
+}
+.supertable-col-first .supertable-row-head {
+    background: none repeat scroll 0 0 #a13032;
+}
+.supertable-col-first .supertable-row-last {
+    border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+}
+.supertable-rowmode .supertable-row-last.supertable-active {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+}
+.supertable-row { /* 235 */
+    clear: left;
+    display: table;
+    width: 100%;
+}
+.supertable-row-head .supertable-cell,
+.supertable-row-head.supertable-cell {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.supertable-colmode .supertable-row-head {
+    background: none repeat scroll 0 0 #a13032;
+}
+.supertable-col .supertable-row-head {
+    border-color: #a13032;
+}
+.supertable-colmode .supertable-active .supertable-row-head {
+    background: none repeat scroll 0 0 #81275c;
+    border-bottom:1px solid #81275c;
+    border-left: 1px solid #81275c;
+    border-top:1px solid #81275c;
+}
+.supertable-active .supertable-row-head.supertable-row-first {
+    border-left: 1px solid #81275c;
+    border-top:1px solid #81275c;
+}
+.supertable-row-head .supertable-cell-subtext { /* 269 */
+    font-size: 95%;
+    font-weight: normal;
+}
+.supertable-row-head .supertable-cell-text {
+    font-size: 150%;
+    font-weight: bold;
+}
+.supertable-colmode .supertable-col-last {
+    border-bottom-right-radius:8px;
+    -moz-border-radius-bottomright:8px;
+    border-top-right-radius:8px;
+    -moz-border-radius-topright:8px;
+}
+.supertable-col-last .supertable-col-border {
+    border-bottom-right-radius:8px;
+    -moz-border-radius-bottomright:8px;
+    border-top-right-radius:8px;
+    -moz-border-radius-topright:8px;
+}
+.supertable-col-last .supertable-row-first {
+    border-top-right-radius:8px;
+    -moz-border-radius-topright:8px;
+}
+.supertable-col-last .supertable-row-last {
+    border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+}
+.supertable-colmode .supertable-col-rowhead .supertable-row-even,
+.supertable-rowmode .supertable-row-even .supertable-col-rowhead { /* 304 */
+    background: #916c4f;
+    color: #ffffff;
+    border-bottom: 1px solid #a57b5b;
+    border-left: 1px solid #775941;
+    border-right: 1px solid #775941;
+    border-top: 1px solid #a57b5b;
+    text-shadow: none;
+}
+.supertable-colmode .supertable-col-rowhead .supertable-row-odd,
+.supertable-rowmode .supertable-row-odd .supertable-col-rowhead {
+    background-color: #af8360;
+    color: #ffffff;
+    border-bottom: 1px solid #a57b5b;
+    border-left: 1px solid #775941;
+    border-right: 1px solid #a57b5b;
+    border-top: 1px solid #775941;
+    text-shadow: none;
+}
+.supertable-colmode .supertable-row-head {
+    background: none repeat scroll 0 0 #a13032;
+    border-top: 1px solid #a13032;
+    border-bottom: 1px solid #a13032;
+    border-left: 1px solid #a13032;
+    border-right: 0;
+}
+/* rowmode classes */ /* 333 */
+.supertable-rowmode .supertable-row.supertable-active {
+    z-index:2;
+    position:relative;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+    -moz-box-shadow:0 0 25px rgba(0,0,0,0.6);
+    -moz-transition: box-shadow 0.4s ease-out 0s;
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.6);
+    -webkit-transition: -webkit-box-shadow 0.4s ease-out;
+}
+.supertable-rowmode .supertable-row.supertable-active .supertable-cell {
+    z-index: 3;
+}
+.supertable-rowmode .supertable-cell {
+    float: left;
+    margin: -1px;
+}
+.supertable-rowmode .supertable-row-first.supertable-active {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+}
+.supertable-rowmode .supertable-row-first .supertable-col-first {
+    border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+}
+.supertable-rowmode .supertable-row-head .supertable-cell {
+    background: none repeat scroll 0 0 #a13032;
+    border: 1px solid #a13032;
+}
+.supertable-rowmode .supertable-row-first .supertable-col-last {
+    border-top-right-radius:8px;
+    -moz-border-radius-topright:8px;
+}
+.supertable-rowmode .supertable-row-last .supertable-col-first {
+    border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+}
+.supertable-rowmode .supertable-row-last .supertable-col-last {
+    border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+}
+.supertable-rowmode .supertable-row-even .supertable-col-rowhead {
+    background: #916c4f;
+}
+.supertable-rowmode .supertable-active .supertable-col-rowhead {
+    background: none repeat scroll 0 0 #d5ab8a;
+    border-bottom:1px solid #d5ab8a;
+    border-left: 1px solid #d5ab8a;
+    border-top:1px solid #d5ab8a;
+}
